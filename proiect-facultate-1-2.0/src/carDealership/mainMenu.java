@@ -4,13 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class mainMenu {
-
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		ArrayList<Account> accounts = new ArrayList<>();
-		Account newAccount = new Account("dani", "dani", "1234567890123", "sat", "1234567890", 1000, "12345678");
-		accounts.add(newAccount);
 		ArrayList<Car> cars = new ArrayList<>();
 		Admin admin = new Admin();
 		admin.setAccounts(accounts);
@@ -20,7 +17,7 @@ public class mainMenu {
 		cars = premadeCars(cars);
 
 		while (isActive) {
-			System.out.println("[Car dealership]");
+			System.out.println("[Car renting]");
 			System.out.println("[1]. Create new account");
 			System.out.println("[2]. Connect to an account");
 			System.out.println("[3]. Connect as admin");
